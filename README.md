@@ -80,4 +80,31 @@
      * Best AUC score among models.
      * Class imbalance still affected performance; most predictions leaned toward the majority class imbalance.
 * AUC Score Comparison before Hyperparameter tuning:
+ [AUC Comparison](Images%20%28Data%20Visualization%29/auc_before_hyperparameter_tuning.png)
+* AUC Score after Hyperparameter tuning (XGBoost & Random Forest)
 
+## Conclusion
+* **XGBoost outperformed** both Logistic Regression and Random Forest in terms of AUC score, making it the most effective model for identifying dissatisfied customers.
+
+## Future Work
+* **Handle Class Imbalance More Effectively:**
+    * Although using GridSearch helped somewhat, class imbalance remains the key challange. In the future, I could explore techniques like SMOTE to create a more balanced dataset.
+
+## Using this Package for Your Own Study
+1. **Prepare the data**
+   * Format your data as a pandas DataFrame. Ensure that your dataset has features (input variables) and a target column (output variable) that the model will predict.
+2. **Modify Configuration**
+    * Adjust the code, hyperparameters, (e.g., in train_model.py or model_training.ipynb) to reflect your dataset's structure and target variable.
+3. **Train the Model**
+    * Use the provided training scripts to train models on your data.
+4. **Evaluate the Model**
+    * Use the provided evaluation metrics (e.g., AUC, accuracy, confusion matrix) to assess your model’s performance.
+5. **Resources**
+    * For running and training the models, I used Google Colab, a free cloud-based environment.
+  
+
+
+  
+ 
+
+  
