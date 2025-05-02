@@ -3,7 +3,8 @@
 
 ## Overview  
 * The goal is to predict the probability that a customer is unsatisfied, using the area under the ROC curve (AUC) as the evaluation metric.
-* **My Approach:** This project formulates the problem as a binary classification task. I started by applying Logistic Regression as a baseline model.To improve performance, more advanced models such as XGBoost and Random Forest.  
+* **My Approach:**
+  * This project formulates the problem as a binary classification task. I started by applying Logistic Regression as a baseline model.To improve performance, more advanced models such as XGBoost and Random Forest.  
 * The best model was able to predict Customer di  
 
 ## Summary of Workdone
