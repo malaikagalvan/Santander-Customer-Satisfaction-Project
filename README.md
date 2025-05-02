@@ -33,6 +33,8 @@
 ![Class Imbalance](Images%20(Data%20Visualization)/class%20imbalance.png)
 * **Observation:** The dataset is imbalanced — most customers are satisfied (TARGET = 0), and only a small portion are dissatisfied (TARGET = 1).
 **Histograms**
-* The top features XG Boost used for interpreting the dataset.
-![Top 20 Features XGBosst](Images%20(Data%20Visualization)/XGBoost%top%20%features.png)
+* The top features XG Boost used for interpreting the dataset.  
+![Top 20 Features - XGBoost](Images%20(Data%20Visualization)/XGBoost_top_20_features.png)
+
+
   
