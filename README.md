@@ -2,7 +2,7 @@
 * This project aims to predict customer satisfaction from the [Santander Customer Satisfaction](https://www.kaggle.com/competitions/santander-customer-satisfaction) Kaggle Challenge.
 
 ## Overview  
-* The goal is to predict the probability that a customer is unsatisfied, using the area under the ROC curve (AUC) as the evaluation metric. This project formulates the problem as a binary classification task. A Logistic Regression was applied as a baseline model. To improve performance, more advanced models such as XGBoost and Random Forest. The best model was able to predict Customer dissastisfaction 67% of the time. Currently the best performance on Kaggle is  82%.
+* The goal is to predict the probability that a customer is unsatisfied, using the area under the ROC curve (AUC) as the evaluation metric. This project formulates the problem as a binary classification task. A Logistic Regression was applied as a baseline model. To improve performance, more advanced models such as XGBoost and Random Forest were used. The best model was able to predict Customer dissastisfaction 67% of the time. Currently the best performance on Kaggle is  82%.
 
 ## Summary of Workdone
 **Data**
