@@ -35,7 +35,7 @@
 **XGBoost Top Features**  
 * The top features XG Boost used for interpreting the dataset.    
 ![Top Features XGBoost](https://github.com/malaikagalvan/Santander-Customer-Satisfaction-Project/blob/main/Images/XGBoost%20-top-20-features.png)  
-
+* **Observation:** var15 was also a top feature for Logistic Regression and Random Forest.
 ## Problem Formulation  
 * Predicting Customer disatisfaction using binary target variable.  
 * **Models:**  
