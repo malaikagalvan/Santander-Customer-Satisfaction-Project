@@ -29,12 +29,12 @@
 * Converted categorical features into numeric using One-hot Encoding.
 
 ## Data Visualization
-**Class Balance** 
-![Class Imbalance](Images/class%20imbalance.png)  
+**Class Balance**   
+![Class Imbalance](https://github.com/malaikagalvan/Santander-Customer-Satisfaction-Project/blob/main/Images/target-variable-distribution.png)  
 * **Observation:** The dataset is imbalanced — most customers are satisfied (TARGET = 0), and only a small portion are dissatisfied (TARGET = 1).  
 **XGBoost Top Features**  
 * The top features XG Boost used for interpreting the dataset.    
-![Top Features XGBoost](Images/XGBoost_top_20_features.png)  
+![Top Features XGBoost](https://github.com/malaikagalvan/Santander-Customer-Satisfaction-Project/blob/main/Images/XGBoost%20-top-20-features.png)  
 
 ## Problem Formulation  
 * Predicting Customer disatisfaction using binary target variable.  
@@ -58,8 +58,6 @@
 ## Training
 **Software & Hardware**
 * **Software:** Python 3.x
-* **Hardware:** Trained locally on a personal laptop
-* **Training Duration:** Training did not take long for the models
 * **Train Stopping:**
      * Logistic Regression: maximum of 3000 iterations.
      * XGBoost: 50 trees.
@@ -79,9 +77,10 @@
 * **XGBoosting**:
      * Best AUC score among models.
      * Class imbalance still affected performance; most predictions leaned toward the majority class imbalance.
-* AUC Score Comparison before Hyperparameter tuning:
- [AUC Comparison](Images%20%28Data%20Visualization%29/auc_before_hyperparameter_tuning.png)
-* AUC Score after Hyperparameter tuning (XGBoost & Random Forest)
+* AUC Score Comparison **before Hyperparameter tuning**:
+ ![AUC Comparison Before](https://github.com/malaikagalvan/Santander-Customer-Satisfaction-Project/blob/main/Images/ROC-before-tuning.png)
+* AUC Score **after Hyperparameter tuning** (XGBoost & Random Forest)  
+![AUC Comparison After](https://github.com/malaikagalvan/Santander-Customer-Satisfaction-Project/blob/main/Images/ROC-after-tuning.png)
 
 ## Conclusion
 * **XGBoost outperformed** both Logistic Regression and Random Forest in terms of AUC score, making it the most effective model for identifying dissatisfied customers.
@@ -90,13 +89,13 @@
 * **Handle Class Imbalance More Effectively:**
     * Although using GridSearch helped somewhat, class imbalance remains the key challange. In the future, I could explore techniques like SMOTE to create a more balanced dataset.
 
-## Using this Package for Your Own Study
+## Using this Project for Your Own Study
 1. **Prepare the data**
    * Format your data as a pandas DataFrame. Ensure that your dataset has features (input variables) and a target column (output variable) that the model will predict.
 2. **Modify Configuration**
     * Adjust the code, hyperparameters, (e.g., in train_model.py or model_training.ipynb) to reflect your dataset's structure and target variable.
 3. **Train the Model**
-    * Use the provided training scripts to train models on your data.
+    * Use the provided training csv to train models on your data.
 4. **Evaluate the Model**
     * Use the provided evaluation metrics (e.g., AUC, accuracy, confusion matrix) to assess your model’s performance.
 5. **Resources**
@@ -107,7 +106,14 @@
 * **Data-Visualization-Cleaning.ipynb**: Data analysis and visualization. Cleaning train.csv file from Kaggle project
 * **Models_Before_Tuning.ipynb**: Contains all models used on a clean the cleaned trained csv file. Includes GridSearchCV.
 * **Updated_Models_with_Tuning.ipynb**: Includes retrained XGBoosting and Random Forest models based on best parameters from GridSearchCV.
+*  **Images**: Contains all images used in this README.md file.
 
- 
+## Required Packages
+* **pandas, numpy, xgboost, scikit-learn, matplotlib**
 
-  
+## Kaggle Data
+* The Satandander Customer Satisfaction datasets can be downloaded on Kaggle [right here](https://www.kaggle.com/competitions/santander-customer-satisfaction).
+
+ ## Training/Evaluation Performance Guide
+ * Training the model involves selecting a model (e.g., Logistic Regression, Random Forest, XGBoost), training it on the training data, and optionally tuning hyperparameters for better performance.
+ * Evaluating performance includes using AUC to assess how well the model predicts the target variable.
