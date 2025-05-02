@@ -53,7 +53,7 @@
 * **XGBoosting:** `learning_rate=0.1`, `max_depth=3`, `n_estimator=50`
 
 ## Training
-**Software & Hardware**
+**Software**
 * **Software:** Python 3.x
 * **Train Stopping:**
      * Logistic Regression: maximum of 3000 iterations.
