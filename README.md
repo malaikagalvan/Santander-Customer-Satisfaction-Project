@@ -74,7 +74,7 @@
 * **XGBoosting**:
      * Best AUC score among models.
      * Class imbalance still affected performance; most predictions leaned toward the majority class imbalance.
-* AUC Score Comparison **before Hyperparameter tuning**:
+* AUC Score Comparison **before Hyperparameter tuning**:  
  ![AUC Comparison Before](https://github.com/malaikagalvan/Santander-Customer-Satisfaction-Project/blob/main/Images/ROC-before-tuning.png)
 * AUC Score **after Hyperparameter tuning** (XGBoost & Random Forest)  
 ![AUC Comparison After](https://github.com/malaikagalvan/Santander-Customer-Satisfaction-Project/blob/main/Images/ROC-after-tuning.png)
