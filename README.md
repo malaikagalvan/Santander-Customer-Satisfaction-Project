@@ -109,7 +109,7 @@
 * **pandas, numpy, xgboost, scikit-learn, matplotlib**
 
 ## Kaggle Data
-* The Satandander Customer Satisfaction datasets can be downloaded on Kaggle [right here](https://www.kaggle.com/competitions/santander-customer-satisfaction).
+* The Santander Customer Satisfaction datasets can be downloaded on Kaggle [right here](https://www.kaggle.com/competitions/santander-customer-satisfaction).
 
  ## Training/Evaluation Performance Guide
  * Training the model involves selecting a model (e.g., Logistic Regression, Random Forest, XGBoost), training it on the training data, and optionally tuning hyperparameters for better performance.
