@@ -23,7 +23,7 @@
 * Used `StandardScaler` to scale numeric features.
   
 **3. Encoding**
-* Converted categorical features into numeric using One-hot Encoding.
+* Converted categorical features into numeric using One-Hot Encoding.
 
 ## Data Visualization
 **Class Balance**   
