@@ -43,7 +43,7 @@
   * **XGBoosting**:  
     * Handles large data sets well and does not need outliers removed to perform well.   
 
-## Optimizers and HyperParameters  
+## Optimizers and Hyperparameters  
 **Optimizer**  
 * **XGBoost:** `binary:logistic` objective
   
