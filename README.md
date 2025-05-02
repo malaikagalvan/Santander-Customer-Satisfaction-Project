@@ -30,11 +30,54 @@
 
 ## Data Visualization
 **Class Balance** 
-![Class Imbalance](Images%20(Data%20Visualization)/class%20imbalance.png)
-* **Observation:** The dataset is imbalanced — most customers are satisfied (TARGET = 0), and only a small portion are dissatisfied (TARGET = 1).
-**Histograms**
-* The top features XG Boost used for interpreting the dataset.  
-![Top 20 Features - XGBoost](Images%20(Data%20Visualization)/XGBoost_top_20_features.png)
+![Class Imbalance](Images%20(Data%20Visualization)/class%20imbalance.png)  
+* **Observation:** The dataset is imbalanced — most customers are satisfied (TARGET = 0), and only a small portion are dissatisfied (TARGET = 1).  
+**XGBoost Top Features**  
+* The top features XG Boost used for interpreting the dataset.    
+![Top 20 Features - XGBoost](Images%20(Data%20Visualization)/XGBoost_top_20_features.png)  
 
+## Problem Formulation  
+* Predicting Customer disatisfaction using binary target variable.  
+* **Models:**  
+  * **Logistic Regression**:  
+    *  A baseline model for binary classification. Used because it is quick to train and simple. 
+  * **Random Forest**:  
+    * Used to handle many features, most of which are anonymized and possibly irrelevant.  
+  * **XGBoosting**:  
+    * Handles large data sets well and does not need outliers removed to perform well.   
 
+## Optimizers and HyperParameters  
+**Optimizer**  
+* **XGBoost:** `binary:logistic` objective
   
+**Hyperparameters**  
+* **Logistic Regression:** `class_weight='balanced'` 
+* **Random Forest:** `class_weight=None`,`max_depth=20`,`n_estimator=200`
+* **XGBoosting:** `learning_rate=0.1`, `max_depth=3`, `n_estimator=50`
+
+## Training
+**Software & Hardware**
+* **Software:** Python 3.x
+* **Hardware:** Trained locally on a personal laptop
+* **Training Duration:** Training did not take long for the models
+* **Train Stopping:**
+     * Logistic Regression: maximum of 3000 iterations.
+     * XGBoost: 50 trees.
+     * Random Forest: 200 trees.
+     * None of the models had early stopping.
+       
+* **Problems**:
+     * Over 90% of customers in the dataset were labeled as satisfied, making it difficult to accurately predict the minority class (unsatisfied).
+     * I attempted hyperparameter tuning using GridSearchCV to improve model performance, but the imbalance still posed a major challenge.
+
+## Performance Comparison
+* **Logistic Regression**:
+     * Resulted in moderate performance based on AUC score, but struggled the most with class imbalance.
+*  **Random Forest**:
+     * Resulted in a better performance than logistic regression, but was slower training.
+     * AUC improved slightly, but sensitivity to the minority class (unsatisfied customers) was poor.
+* **XGBoosting**:
+     * Best AUC score among models.
+     * Class imbalance still affected performance; most predictions leaned toward the majority class imbalance.
+* AUC Score Comparison before Hyperparameter tuning:
+
