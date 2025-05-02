@@ -9,13 +9,13 @@
 
 ## Summary of Workdone
 **Data**
-* A CSV file containing anonymized features.
+* A train CSV file containing anonymized features.
 * **Target**: A binary classification indicating customer satisfaction. TARGET column (1 for dissatisfied, 0 for satisfied).    
 * **Size**  
   * **Data:** 76020 rows, 371 columns  
-* **Instances (Train,Test Split):** 
+* **Train,Test Split & Cross Validation:** 
   * 80% of the data (60723 samples) for training), 20% of data (15181)used for testing.
-  * `GridSearchCV` was for hyperparameter tuning.  
+  * `GridSearchCV` was used for hyperparameter tuning to find the best model.  
 
 ## Preprocessing / Clean up  
 **1. Handling Missing Data**   
