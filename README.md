@@ -4,7 +4,7 @@
 ## Overview  
 * The goal is to predict the probability that a customer is unsatisfied, using the area under the ROC curve (AUC) as the evaluation metric.
 * **My Approach:**
-  * This project formulates the problem as a binary classification task. I started by applying Logistic Regression as a baseline model.To improve performance, more advanced models such as XGBoost and Random Forest.  
+  * This project formulates the problem as a binary classification task. A Logistic Regression was applied as a baseline model.To improve performance, more advanced models such as XGBoost and Random Forest.  
 * The best model was able to predict Customer dissastisfaction 67.798% of the time. Currently the best performance on Kaggle is  82.907%.
 
 ## Summary of Workdone
@@ -87,7 +87,7 @@
 
 ## Future Work
 * **Handle Class Imbalance More Effectively:**
-    * Although using GridSearch helped somewhat, class imbalance remains the key challange. In the future, I could explore techniques like SMOTE to create a more balanced dataset.
+    * Although using GridSearch helped somewhat, class imbalance remains the key challange. In the future, exploring techniques like SMOTE to create a more balanced dataset may help with this.
 
 ## Using this Project for Your Own Study
 1. **Prepare the data**
@@ -99,7 +99,7 @@
 4. **Evaluate the Model**
     * Use the provided evaluation metrics (e.g., AUC, accuracy, confusion matrix) to assess your model’s performance.
 5. **Resources**
-    * For running and training the models, I used Google Colab, a free cloud-based environment.
+    * For running and training the models Google Colab was used, a free cloud-based environment.
   
 
 ## Overview of Files in Repository:
