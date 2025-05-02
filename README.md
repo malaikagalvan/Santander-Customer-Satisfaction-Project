@@ -30,11 +30,11 @@
 
 ## Data Visualization
 **Class Balance** 
-![Class Imbalance](Images%20(Data%20Visualization)/class%20imbalance.png)  
+![Class Imbalance](Images/class%20imbalance.png)  
 * **Observation:** The dataset is imbalanced — most customers are satisfied (TARGET = 0), and only a small portion are dissatisfied (TARGET = 1).  
 **XGBoost Top Features**  
 * The top features XG Boost used for interpreting the dataset.    
-![Top Features XGBoost](Images%20(Data%20Visualization)/XGBoost_top_20_features.png)  
+![Top Features XGBoost](Images/XGBoost_top_20_features.png)  
 
 ## Problem Formulation  
 * Predicting Customer disatisfaction using binary target variable.  
