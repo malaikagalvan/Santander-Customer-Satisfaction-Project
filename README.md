@@ -11,7 +11,7 @@
 * **Size**  
   * **Data:** 76020 rows, 371 columns  
 * **Train, Test Split & Cross Validation:** 
-  * 80% of the data (60723 samples) for training), 20% of data (15181) used for testing.
+  * 80% of the data (60723 samples) for training), 20% of data (15181 samples) used for testing.
   * `GridSearchCV` was used for hyperparameter tuning to find the best model.  
 
 ## Preprocessing / Clean up  
