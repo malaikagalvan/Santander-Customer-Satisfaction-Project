@@ -1,5 +1,5 @@
 # Santander Customer Satisfaction Project
-* This project attempts to predict customer satisfaction from the [Santander Customer Satisfaction](https://www.kaggle.com/competitions/santander-customer-satisfaction) Kaggle Challenge.
+* This project aims to predict customer satisfaction from the [Santander Customer Satisfaction](https://www.kaggle.com/competitions/santander-customer-satisfaction) Kaggle Challenge.
 
 ## Overview  
 * The goal is to predict the probability that a customer is unsatisfied, using the area under the ROC curve (AUC) as the evaluation metric.
