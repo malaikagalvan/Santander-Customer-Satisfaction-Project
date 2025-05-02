@@ -5,7 +5,7 @@
 * The goal is to predict the probability that a customer is unsatisfied, using the area under the ROC curve (AUC) as the evaluation metric.
 * **My Approach:**
   * This project formulates the problem as a binary classification task. I started by applying Logistic Regression as a baseline model.To improve performance, more advanced models such as XGBoost and Random Forest.  
-* The best model was able to predict Customer di  
+* The best model was able to predict Customer dissastisfaction 67.798% of the time. Currently the best performance on Kaggle is  82.907%.
 
 ## Summary of Workdone
 **Data**
@@ -34,7 +34,7 @@
 * **Observation:** The dataset is imbalanced — most customers are satisfied (TARGET = 0), and only a small portion are dissatisfied (TARGET = 1).  
 **XGBoost Top Features**  
 * The top features XG Boost used for interpreting the dataset.    
-![Top 20 Features - XGBoost](Images%20(Data%20Visualization)/XGBoost_top_20_features.png)  
+![Top Features XGBoost](Images%20(Data%20Visualization)/XGBoost_top_20_features.png)  
 
 ## Problem Formulation  
 * Predicting Customer disatisfaction using binary target variable.  
@@ -103,8 +103,11 @@
     * For running and training the models, I used Google Colab, a free cloud-based environment.
   
 
+## Overview of Files in Repository:
+* **Data-Visualization-Cleaning.ipynb**: Data analysis and visualization. Cleaning train.csv file from Kaggle project
+* **Models_Before_Tuning.ipynb**: Contains all models used on a clean the cleaned trained csv file. Includes GridSearchCV.
+* **Updated_Models_with_Tuning.ipynb**: Includes retrained XGBoosting and Random Forest models based on best parameters from GridSearchCV.
 
-  
  
 
   
