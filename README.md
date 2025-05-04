@@ -30,18 +30,19 @@
 * The dataset is imbalanced — most customers are satisfied (TARGET = 0), and only a small portion are dissatisfied (TARGET = 1).
 
 **Categorical Features**
-* Table to better represent categorical features:
-![Categorical Features Table](https://github.com/malaikagalvan/Santander-Customer-Satisfaction-Project/blob/main/Images/Categorical-columns-table.png)
-* **Observation:** Certain features such as num_var1 are dominated by a single values (0.0 appears in over 98% of cases). This suggests that some features have low variability and may not carry strong predictive power.   
+* Table to better represent categorical features:  
+![Categorical Features Table](https://github.com/malaikagalvan/Santander-Customer-Satisfaction-Project/blob/main/Images/Categorical-columns-table.png)  
+* **Observation:** Certain features such as num_var1 are dominated by a single values (0.0 appears in over 98% of cases). This suggests that some features have low variability and may not carry strong predictive power.     
 
 **XGBoost Top Features**  
 * The top features XG Boost used for interpreting the dataset.    
 ![Top Features XGBoost](https://github.com/malaikagalvan/Santander-Customer-Satisfaction-Project/blob/main/Images/XGBoost%20-top-20-features.png)  
 * **Observation:** var15 was also a top feature for Logistic Regression and Random Forest.
 
-**var15 Histogram**
-![var15 Histogram](https://github.com/malaikagalvan/Santander-Customer-Satisfaction-Project/blob/main/Images/var15-hist.png)  
-* **Observation:** This feature represents age. It appears that satisfied customers are clustered around lower values compared to unsatisfied customers.
+**var15 Histogram**  
+* Distribution for var 15 (age):  
+![var15 Histogram](https://github.com/malaikagalvan/Santander-Customer-Satisfaction-Project/blob/main/Images/var15-hist.png)     
+* **Observation:** It appears that satisfied customers are clustered around lower values compared to unsatisfied customers.   
 
 
 ## Problem Formulation  
