@@ -38,6 +38,12 @@
 * The top features XG Boost used for interpreting the dataset.    
 ![Top Features XGBoost](https://github.com/malaikagalvan/Santander-Customer-Satisfaction-Project/blob/main/Images/XGBoost%20-top-20-features.png)  
 * **Observation:** var15 was also a top feature for Logistic Regression and Random Forest.
+
+**var15 Histogram**
+![var15 Histogram](https://github.com/malaikagalvan/Santander-Customer-Satisfaction-Project/blob/main/Images/var15-hist.png)  
+* **Observation:** This feature represents age. It appears that satisfied customers are clustered around lower values compared to unsatisfied customers.
+
+
 ## Problem Formulation  
 * Predicting Customer disatisfaction using binary target variable.  
 * **Models:**  
