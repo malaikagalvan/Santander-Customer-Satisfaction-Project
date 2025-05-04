@@ -1,1 +1,1 @@
-This file contains highlight project data visualization images.
+This file contains some highlight data visualization images.
