@@ -27,8 +27,8 @@
 
 ## Data Visualization
 **Class Balance**   
-![Class Imbalance](https://github.com/malaikagalvan/Santander-Customer-Satisfaction-Project/blob/main/Images/target-variable-distribution.png)  
-* **Observation:** The dataset is imbalanced — most customers are satisfied (TARGET = 0), and only a small portion are dissatisfied (TARGET = 1).  
+* The dataset is imbalanced — most customers are satisfied (TARGET = 0), and only a small portion are dissatisfied (TARGET = 1).
+  
 **XGBoost Top Features**  
 * The top features XG Boost used for interpreting the dataset.    
 ![Top Features XGBoost](https://github.com/malaikagalvan/Santander-Customer-Satisfaction-Project/blob/main/Images/XGBoost%20-top-20-features.png)  
@@ -52,8 +52,7 @@
 * **Random Forest:** `class_weight=None`,`max_depth=20`,`n_estimator=200`
 * **XGBoosting:** `learning_rate=0.1`, `max_depth=3`, `n_estimator=50`
 
-## Training
-**Software**
+## Training  
 * **Software:** Python 3.x
 * **Train Stopping:**
      * Logistic Regression: maximum of 3000 iterations.
