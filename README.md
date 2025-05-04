@@ -32,7 +32,9 @@
 **Categorical Features**
 * Table to better represent categorical features:  
 ![Categorical Features Table](https://github.com/malaikagalvan/Santander-Customer-Satisfaction-Project/blob/main/Images/Categorical-columns-table.png)  
-* **Observation:** Certain features such as num_var1 are dominated by a single values (0.0 appears in over 98% of cases). This suggests that some features have low variability and may not carry strong predictive power.     
+* **Observation:**  
+  * Certain features such as num_var1 are dominated by a single values (0.0 appears in over 98% of cases). This suggests that some features have low variability and may not carry strong predictive power.
+  * Although certain columns include the name 'num' this does not mean the data is truly numeric in nature. For this project, categorical features where selected based on number of unique values (3-9).     
 
 **XGBoost Top Features**  
 * The top features XG Boost used for interpreting the dataset.    
@@ -120,7 +122,7 @@
 * **pandas, numpy, xgboost, scikit-learn, matplotlib**
 
 ## Kaggle Data
-* The Santander Customer Satisfaction datasets can be downloaded on Kaggle [right here](https://www.kaggle.com/competitions/santander-customer-satisfaction).
+* The Santander Customer Satisfaction datasets can be downloaded on Kaggle [right here](https://www.kaggle.com/competitions/santander-customer-satisfaction/data).
 
  ## Training/Evaluation Performance Guide
  * Training the model involves selecting a model (e.g., Logistic Regression, Random Forest, XGBoost), training it on the training data, and optionally tuning hyperparameters for better performance.
