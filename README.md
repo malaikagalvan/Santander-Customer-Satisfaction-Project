@@ -44,7 +44,7 @@
 **var15 Histogram**  
 * Distribution for var 15 (age):  
 ![var15 Histogram](https://github.com/malaikagalvan/Santander-Customer-Satisfaction-Project/blob/main/Images/var15-hist.png)     
-* **Observation:** It appears that satisfied customers are clustered around lower values compared to unsatisfied customers.   
+* **Observation:** The majority of satisfied customers have lower var15 values, especially clustered around 20-30. Unsatisfied customers are also concentrated in the same area but show more spread across higher values. 
 
 
 ## Problem Formulation  
