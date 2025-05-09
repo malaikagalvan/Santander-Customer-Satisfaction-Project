@@ -37,7 +37,7 @@
   * Although certain columns include the name 'num' this does not mean the data is truly numeric in nature. For this project, categorical features where selected based on number of unique values (3-9).     
 
 **XGBoost Top Features**  
-* The top features XG Boost used for interpreting the dataset.    
+* The top features XGBoost used for interpreting the dataset.    
 ![Top Features XGBoost](https://github.com/malaikagalvan/Santander-Customer-Satisfaction-Project/blob/main/Images/XGBoost%20-top-20-features.png)  
 * **Observation:** var15 was also a top feature for Logistic Regression and Random Forest.
 
@@ -48,7 +48,7 @@
 
 
 ## Problem Formulation  
-* Predicting Customer disatisfaction using binary target variable.  
+* Predicting Customer dissatisfaction using binary target variable.  
 * **Models:**  
   * **Logistic Regression**:  
     *  A baseline model for binary classification. Used because it is quick to train and simple. 
@@ -97,7 +97,7 @@
 
 ## Future Work
 * **Handle Class Imbalance More Effectively:**
-    * Although using GridSearch helped somewhat, class imbalance remains the key challange. In the future, exploring techniques like SMOTE to create a more balanced dataset may help with this.
+    * Although using GridSearch helped somewhat, class imbalance remains the key challenge. In the future, exploring techniques like SMOTE to create a more balanced dataset may help with this.
 
 ## Using this Project for Your Own Study
 1. **Prepare the data**
